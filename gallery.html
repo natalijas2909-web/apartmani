@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>N Apartments - Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+             margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+             font-family: 'Roboto', sans-serif;
+         }
+
+        body {
+            background-color: #F5EBDD;
+            color: #333;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            background-color: #A67B5B;
+            padding: 15px;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .page-title {
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+
+        .page-title h1 {
+              font-size: 2.5em;
+              margin-bottom: 10px;
+             }
+
+        .gallery-intro {
+             max-width: 700px;
+             margin: 0 auto 30px;
+             text-align: center;
+             font-size: 1em;
+             line-height: 1.6;
+            }
+
+        .gallery-filters {
+          display: flex;
+          justify-content: center;
+          gap: 15px;
+          margin-bottom: 40px;
+         }
+
+        .gallery-filters button {
+          background-color: #ffffff;
+          border: 2px solid #A67B5B;
+          color: #A67B5B;
+          padding: 8px 18px;
+          border-radius: 25px;
+          cursor: pointer;
+          font-weight: bold;
+         }
+
+         .gallery-filters button.active,
+         .gallery-filters button:hover {
+          background-color: #A67B5B;
+          color: #ffffff;
+        }
+
+         .gallery {
+            padding: 0 20px 80px;
+         }
+
+         .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+         }
+
+         .gallery-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+         }
+
+         .gallery-grid img:hover {
+            transform: scale(1.05);
+         }
+
+         footer {
+            background-color: #A67B5B;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+         }
+        
+        @media (max-width: 768px) {
+
+             nav ul {
+             flex-direction: column;
+             gap: 15px;
+            }
+
+             .hero h1 {
+             font-size: 2em;
+            }
+
+             .hero p {
+             font-size: 1em;
+            }
+
+             .apartment-card {
+              width: 90%;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="apartments.html">Apartments</a></li>
+        <li><a href="gallery.html" class="active" >Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="page-title">
+    <h1>Gallery</h1>
+    <p>Discover the elegance and comfort of N Apartments</p>
+</section>
+
+<section class="gallery">
+    <div class="gallery-grid">
+        <img src="images/gallery1.jpg" alt="Apartment interior">
+        <img src="images/gallery2.jpg" alt="Living room">
+        <img src="images/gallery3.jpg" alt="Bedroom">
+        <img src="images/gallery4.jpg" alt="Kitchen">
+        <img src="images/gallery5.jpg" alt="Bathroom">
+        <img src="images/gallery6.jpg" alt="City view">
+    </div>
+</section>
+  <div class="gallery-intro">
+    <p>
+        Explore our carefully designed apartments, where modern style meets comfort.
+        Every space is crafted to make your stay in New York unforgettable.
+    </p>
+  </div>
+
+  <div class="gallery-filters">
+    <button class="active">All</button>
+    <button>Interior</button>
+    <button>Bedroom</button>
+    <button>Kitchen</button>
+    <button>View</button>
+  </div>
+<footer>
+    <p>N Apartments, New York</p>
+</footer>
+
+</body>
+</html>

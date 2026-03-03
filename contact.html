@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>N Apartments – Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #F5EBDD;
+            color: #333;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            background-color: #A67B5B;
+            padding: 15px;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .page-title {
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+
+        .page-title h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            max-width: 900px;
+            margin: 0 auto 80px;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 15px;
+            color: #8C5E3C;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .contact-form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        .contact-form button {
+            background-color: #8C5E3C;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .contact-form button:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            background-color: #A67B5B;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+
+             nav ul {
+             flex-direction: column;
+             gap: 15px;
+            }
+
+             .hero h1 {
+             font-size: 2em;
+            }
+
+             .hero p {
+             font-size: 1em;
+            }
+
+             .apartment-card {
+              width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="apartments.html">Apartments</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="page-title">
+    <h1>Contact Us</h1>
+    <p>Get in touch with N Apartments</p>
+</section>
+
+<section class="contact">
+
+    <div class="contact-info">
+        <h3>Our Location</h3>
+        <p>New York City, USA</p>
+
+        <h3>Email</h3>
+        <p>info@napartments.com</p>
+
+        <h3>Phone</h3>
+        <p>+1 234 567 890</p>
+    </div>
+
+    <div class="contact-form">
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Your name">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Your email">
+
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Your message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</section>
+
+<footer>
+    <p>N Apartments, New York</p>
+</footer>
+
+</body>
+</html>
